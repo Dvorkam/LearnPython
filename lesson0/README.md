@@ -44,7 +44,7 @@ By the end of this chapter. All the tools we will need in upcomming chapters sho
      ```
    - Confirm the version matches the version of python you downloaded in step 1
      ```
-     C:\Users\Michal>python --version
+     C:\Users\User>python --version
      Python 3.11.5
      ```
    - If not, your python installation has not been added to PATH at which point I suggest to uninstall python and try again from step 2
