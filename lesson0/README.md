@@ -25,7 +25,7 @@ By the end of this chapter. All the tools we will need in upcomming chapters sho
 2. **Install Python:**
    - Double-click the installer to run it.
    - During the installation process, you'll come across a checkbox that says "Add python.exe to PATH. Red circle in image below" Make sure this checkbox is checked. This will allow you to use Python from the command line without specifying its full path. If you have an earlier version of Python installed, you will instead be offered an upgrade).
-   ![Installing latest verison of Python](https://github.com/Dvorkam/LearnPython/blob/lesson0/lesson0/assets/install_python.PNG) 
+   ![Installing latest verison of Python](https://github.com/Dvorkam/LearnPython/blob/lesson0/lesson0/assets/install_python.png) 
    - Complete the installation by following the on-screen instructions. The default settings are usually sufficient.
 
 3. **Verify the Installation:**
