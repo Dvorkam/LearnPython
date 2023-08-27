@@ -15,36 +15,37 @@ This chapter will attempt to get you set up as fast as possible so you can start
 
 By the end of this chapter. All the tools we will need in upcomming chapters should be setup and we will be able to get to the fun stuff.
 
-## 1.1 Download and Install Python
+## I. Download and Install Python
 
 1. **Download Python:**
-
    - Open a web browser and go to the official Python website: [python.org/downloads](https://www.python.org/downloads/).
    - You'll see the latest version of Python displayed prominently. Make sure to download the **Python 3.x** version (e.g., Python 3.10, Python 3.11).
-   {Image: Download-Python}
-   - Choose the appropriate installer for your operating system (Windows, macOS, or Linux). If you're unsure, the website usually detects your operating system and suggests the correct installer.
-
-   
+   ![Downloading latest verison of Python](https://github.com/Dvorkam/LearnPython/blob/lesson0/lesson0/assets/python_download.PNG)   
 
 2. **Install Python:**
-
-   - After downloading the installer, locate the downloaded file (it's usually in your "Downloads" folder).
    - Double-click the installer to run it.
-   - During the installation process, you'll come across a checkbox that says "Add Python X.X to PATH." Make sure this checkbox is checked. This will allow you to use Python from the command line without specifying its full path.
+   - During the installation process, you'll come across a checkbox that says "Add python.exe to PATH. Red circle in image below" Make sure this checkbox is checked. This will allow you to use Python from the command line without specifying its full path. If you have an earlier version of Python installed, you will instead be offered an upgrade).
+   ![Installing latest verison of Python](https://github.com/Dvorkam/LearnPython/blob/lesson0/lesson0/assets/install_python.PNG) 
    - Complete the installation by following the on-screen instructions. The default settings are usually sufficient.
 
-   {Image: Install-Python}
-
 3. **Verify the Installation:**
+   - Opening a command prompt or terminal window for example by
+       - press WIN + R
+       - type cmd
+       - press enter
+   - or
+       - click start button
+       - type Command Prompt
+       - select Command Prompt
 
-   - Once the installation is complete, you can verify that Python was installed successfully by opening a command prompt or terminal window.
    - Type the following command and press Enter:
-
      ```
      python --version
      ```
-
-   - You should see the version of Python you installed printed to the screen (e.g., "Python 3.9.6").
-
-Congratulations, you've successfully installed Python on your computer! In the next steps, we'll set up a virtual environment and install some required packages to create a clean and isolated environment for your Python projects.
+   - Confirm the version matches the version of python you downloaded in step 1
+     ```
+     C:\Users\Michal>python --version
+     Python 3.11.5
+     ```
+   - If not, your python installation has not been added to PATH at which point I suggest to uninstall python and try again from step 2
 
