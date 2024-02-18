@@ -4,19 +4,16 @@
 
 ## Objectives
 
-1. Setup Python and Visual Studio Code (VSC)
-    1. Download and install Python
-        1. [Windows](#111-on-windows)
-        2. [Ubuntu](#112-on-ubuntu-wip)
-    2. Download and install VSC
-        1. [Windows](#121-for-windows)
-        2. [Ubuntu](#112-on-ubuntu-wip) 
-    3. [Create Python profile in VSC](#13-create-python-profile-in-vsc)
-    4. Clone **Learn Python** repository and fork it
-    5. Setup virtual environment
-    6. Install required packages
 
-2. Be introduced to this course
+1. Download and install Python
+    1. [Windows](#111-on-windows)
+    2. [Ubuntu](#112-on-ubuntu-wip)
+2. Download and install VSC
+    1. [Windows](#121-for-windows)
+    2. [Ubuntu](#112-on-ubuntu-wip) 
+3. [Create Python profile in VSC](#13-create-python-profile-in-vsc)
+4. [Clone Learn Python repository](#14-clone-learn-python-repository)
+
 
 ## About
 
@@ -32,12 +29,12 @@ By the end of this chapter. All the tools we will need in upcomming chapters sho
 
 - Open a web browser and go to the official Python website: [python.org/downloads](https://www.python.org/downloads/).
 - You'll see the latest version of Python displayed prominently. Make sure to download the **Python 3.x** version (e.g., Python 3.10, Python 3.11).
-![Downloading latest verison of Python](https://github.com/Dvorkam/LearnPython/blob/lesson0/lesson0/assets/python_download.PNG)   
+![Downloading latest version of Python](https://github.com/Dvorkam/LearnPython/blob/lesson0/lesson0/assets/python_download.PNG)
 
 **Install Python:**
 
 - Double-click the installer to run it.
-- During the installation process, you'll come across a checkbox that says "Add python.exe to PATH. Red circle in image below" Make sure this checkbox is checked. This will allow you to use Python from the command line without specifying its full path. If you have an earlier version of Python installed, you will instead be offered an upgrade).
+- During the installation process, you'll come across a checkbox that says "Add python.exe to PATH. Red circle in image below" Make sure this checkbox is checked. This will allow you to use Python from the command line without specifying its full path. If you have an earlier version of Python installed, you will instead be offered an upgrade.
 ![Installing latest verison of Python](https://github.com/Dvorkam/LearnPython/blob/lesson0/lesson0/assets/install_python.png) 
 - Complete the installation by following the on-screen instructions. The default settings are usually sufficient.
 
@@ -65,7 +62,7 @@ C:\Users\User>python --version
 Python 3.11.5
 ```
 
-- If not, your python installation has not been added to PATH at which point I suggest to uninstall python and try again from step 2
+- If not, your python installation has not been added to PATH and you will have to add it manually.
 
 ### 1.1.2 On Ubuntu (WIP)
 
@@ -187,11 +184,11 @@ III. Finally click on Create Profile...
 
 IV. From the selection at the top of the window Python
 
-V. Selection on the left shows you what setting and extensions will be donwloaded/applied, for now, you can leave as is, or if you want to save some disk space, you can unsellect Dev Containers, Docker, WSL, and all Remote * extensions, at the time of writing of this document I wasn't sure if we will use them at all, but can always get them later.
+V. Selection on the left shows you what setting and extensions will be downloaded/applied, for now, you can leave as is, or if you want to save some disk space, you can unselect Dev Containers, Docker, WSL, and all Remote * extensions, at the time of writing of this document I wasn't sure if we will use them at all, but can always get them later.
 
 {Profile setup}
 
-## 1.4 Clone **Learn Python** Repository and Fork It
+## 1.4 Clone Learn Python Repository
 
 1. **Open Visual Studio Code:**
 
@@ -200,77 +197,24 @@ V. Selection on the left shows you what setting and extensions will be donwloade
 2. **Open Source Control View:**
 
    - Click on the Source Control icon in the sidebar on the left (or press `Ctrl` + `Shift` + `G`) and click Clone Repository. Or if Welcome screen is opened you can click `Clone Git Repository...`
+    ![Clone Repository](https://github.com/Dvorkam/LearnPython/blob/lesson0/lesson0/assets/clone_repository.PNG)
+       - WARNING: If you don't have git installed on your PC, you will instead see following:
+   ![Donwnload Git](https://github.com/Dvorkam/LearnPython/blob/lesson0/lesson0/assets/download_git.PNG)
+       - In which case please just click Download Git for Windows, which will take you yo git.com and download and install the Git.
+
+       - All the default settings are ok, but since we already have the VSC installed, you may just as well use VSC as your default Git editor.
+       ![Set VSC as default Git editor during installation](https://github.com/Dvorkam/LearnPython/blob/lesson0/lesson0/assets/git_setup.PNG)
 
 3. **Enter Repository URL:**
-
    - In the input field, enter the URL of the **Learn Python** repository: [https://github.com/Dvorkam/LearnPython.git](https://github.com/Dvorkam/LearnPython.git).
    - Choose a local path where you want to clone the repository and confirm.
 4. **Sign up at GitHub.com**
+    - RECOMMENDED: This step is not really necessary at this point, and in general will not be necessary, until you decide you want to start your own GitHub portfolio (on that later). BUT these is not really reason not to do it so ...
     - Register and account at [https://github.com/signup](https://github.com/signup?ref_cta=Sign+up&ref_loc=header+logged+out&ref_page=%2F&source=header-home)
-    - Sign in
 
-6. **Fork the Repository:**
+5. **(SKIP FOR NOW) Fork the Repository:**
+     - If you want to push changes in your git repository, you either need to have access, or fork it. Since this is not really an introductory or necessary step, we will skip it for now.
 
-   - Open a web browser and navigate to the **Learn Python** repository on GitHub: [https://github.com/Dvorkam/LearnPython](https://github.com/Dvorkam/LearnPython).
-   - Click the "Fork" button in the top-right corner of the repository page. This will create your copy (fork) of the repository on your GitHub account.
-
-7. **Open Cloned Repository:**
+6. **Open Cloned Repository:**
 
    - Once the repository is cloned, you can open it in Visual Studio Code by clicking the "Open Repository" button in the notification that appears after the cloning is complete.
-
-## 1.5 Setup Virtual Environment
-
-I. **Open a Terminal in VSC:**
-
-- In VSC in menu click on View
-- Here click on Terminal
-
-III. **Create a Virtual Environment:**
-
-- To create a virtual environment named `venv`, enter the following command:
-
-     ```sh
-     python -m venv venv
-     ```
-
-     or on Ubuntu
-
-     ```sh
-     python3 -m venv venv
-     ```
-
-     This will create a folder named `venv` in your project directory to hold your virtual environment.
-
-IV. **Activate the Virtual Environment:**
-
-- On Windows, activate the virtual environment using this command:
-
-     ```sh
-     venv\Scripts\activate
-     ```
-
-- On macOS and Linux, use this command:
-
-     ```sh
-     source venv/bin/activate
-     ```
-
-   When the virtual environment is activated, your command prompt will change to show the name of the virtual environment.
-
-   Something like this:
-
-     ```terminal
-     (venv) PS D:\repos\LearnPython>
-     ```
-
-V. **(Don't do) Deactivate the Virtual Environment:**
-
-- To exit the virtual environment and return to your system's Python, simply enter into terminal the command:
-
-     ```sh
-     deactivate
-     ```
-
-   The virtual environment will be deactivated, and you'll return to the global Python environment.
-
-Virtual environments are a fairly broad topic, we will not get into in this chapter. But since its usefulness is too high even without fully understanding it, we will use it, without further elaboration, until later.
