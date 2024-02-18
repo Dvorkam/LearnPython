@@ -197,9 +197,10 @@ V. Selection on the left shows you what setting and extensions will be downloade
 2. **Open Source Control View:**
 
    - Click on the Source Control icon in the sidebar on the left (or press `Ctrl` + `Shift` + `G`) and click Clone Repository. Or if Welcome screen is opened you can click `Clone Git Repository...`
-    ![Clone Repository](https://github.com/Dvorkam/LearnPython/blob/lesson0/lesson0/assets/clone_repository.PNG)
+       ![Clone Repository](https://github.com/Dvorkam/LearnPython/blob/lesson0/lesson0/assets/clone_repository.png)
        - WARNING: If you don't have git installed on your PC, you will instead see following:
-   ![Donwnload Git](https://github.com/Dvorkam/LearnPython/blob/lesson0/lesson0/assets/download_git.PNG)
+   
+       ![Donwnload Git](https://github.com/Dvorkam/LearnPython/blob/lesson0/lesson0/assets/download_git.PNG)
        - In which case please just click Download Git for Windows, which will take you yo git.com and download and install the Git.
 
        - All the default settings are ok, but since we already have the VSC installed, you may just as well use VSC as your default Git editor.
