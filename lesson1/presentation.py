@@ -66,6 +66,7 @@ print("Updated langueages:", langs)
 
 #indexing example: 
 print(f"printing nth (0) element: {langs[0]}")
+print(type(langs[0]))
 
 # Slicing examples
 print(f"printing nth to mth [1:4]  element: {langs[1:4]}")
@@ -85,11 +86,12 @@ print(f"Name: {about_me[0]}, Favorite Number: {about_me[1]}, plays DnD: {about_m
 
 #### 4.3 Ranges
 start = 1
-stop = 12
+stop = 9999999999999999999999999999999999999999999999999999999999999999999999999999999999999
 step = 3
 my_range = range(start, stop, step)
-print([ele for ele in my_range])
-print(f"2nd element in range is {my_range[2]}")
+
+print(f"2nd element in range is {my_range[888888888888888888888888]}")
+#print([ele for ele in my_range])
 
 #### 4.3 Sets
 print_header("Set demonstration")
@@ -134,7 +136,7 @@ print(f"After adding my favorite language: {favorite_things}")
 print_header("Boolean demonstration")
 # A boolean value representing facts about TS
 am_I_always_lying = True
-is_that_paradox = True
+is_that_paradox = False
 
 #answer = input("So am I lying or not?: ")
 #print(type(answer))
